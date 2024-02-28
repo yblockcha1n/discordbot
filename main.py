@@ -5,7 +5,7 @@ from oauth2client.service_account import ServiceAccountCredentials
 TOKEN = 'YOUR_BOT_TOKEN_HERE'
 
 SCOPE = ['https://spreadsheets.google.com/feeds']
-CREDS = ServiceAccountCredentials.from_json_keyfile_name('CREDENTIALS.JSON', SCOPE)
+CREDS = ServiceAccountCredentials.from_json_keyfile_name('credentials.json', SCOPE)
 CLIENT = gspread.authorize(CREDS)
 SPREADSHEET_ID = 'SPREADSHEET_ID_HERE'
 
